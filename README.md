@@ -72,6 +72,16 @@
 
 ---
 
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=UserXX7&show_icons=true&theme=tokyonight&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=UserXX7&layout=compact&theme=tokyonight&hide_border=true" height="170" />
+</p>
+
+
+---
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=2" />
 </p>
