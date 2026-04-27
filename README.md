@@ -8,22 +8,38 @@
 </h1>
 
 <p align="center" style="color:#9ca3af;">
-  Junior Software & Web Developer • Builder • Problem Solver  
+  Software Engineer • Backend & Automation Systems • Full-Stack Developer
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=520&lines=Developer+%7C+Designer+%7C+Tech+Builder;Building+Jobscript%2C+FlourSync%2C+More...;Always+Learning%2C+Always+Improving" />
+ <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=520&lines=Backend+%26+Automation+Engineer;Building+Real-World+CRM+Systems;APIs+%7C+Webhooks+%7C+Full-Stack+Apps" />
 </p>
+
+---
+
+## 🚀 Featured Project
+
+### 🤖 CRM + Instagram Automation System
+- Built a real-time automation platform using **Meta Graph API + Webhooks**
+- Automated DM handling, keyword-based replies, and user tracking
+- Designed backend workflows to process and store live customer data
+- Built for real business use to support customer interaction automation
 
 ---
 
 ## 🌌 About Me
 
-- 💻 I’m currently working on multiple projects: **Jobscript**, **FlourSync**, and my **Portfolio**  
-- 🎓 Majoring in **Programming & Software Development** at LaGuardia CC  
-- 🔥 Passionate about UI/UX, clean code, and real-world software  
-- 🧠 Learning: C#, .NET MAUI, Java, MySQL, and full-stack fundamentals  
-- 🎮 Fun fact: I love games, tech, and building things from scratch  
+- 🤖 Developing a **CRM + Instagram Automation System** for real business use  
+- 💬 Automating customer interactions using APIs, webhooks, and backend workflows  
+- 📊 Managing real-time data with dashboards and database systems  
+- 🚀 Also building: **Jobscript**, **FlourSync**, and **Zafars 2.0**  
+- 🎓 AAS in Programming & Software Development @ LaGuardia Community College  
+- ⚡ Focused on backend systems, automation, and scalable applications  
+
+🛠 Core: JavaScript, PHP, MySQL  
+🔗 APIs & Automation: REST APIs, Webhooks  
+💻 Languages: Python, Java, C++  
+⚙️ Tools: Git, VS Code, Linux  
 
 ---
 
@@ -38,7 +54,7 @@
 ## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/"><img height="40" src="https://skillicons.dev/icons?i=linkedin" /></a>
+  <a href="https://www.linkedin.com/in/alif-rony/"><img height="40" src="https://skillicons.dev/icons?i=linkedin" /></a>
   &nbsp;&nbsp;
   <a href="mailto:alifreza@live.com"><img height="40" src="https://img.icons8.com/fluency/48/000000/mail.png" /></a>
 </p>
