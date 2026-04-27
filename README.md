@@ -15,7 +15,9 @@
  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=520&lines=Backend+%26+Automation+Engineer;Building+Real-World+CRM+Systems;APIs+%7C+Webhooks+%7C+Full-Stack+Apps" />
 </p>
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=2" />
+</p>
 
 ## 🚀 Featured Project
 
