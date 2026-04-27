@@ -45,6 +45,14 @@
 
 ---
 
+## 🎯 Current Focus
+
+<p align="center">
+  <b>Backend Automation</b> • <b>CRM Systems</b> • <b>APIs & Webhooks</b> • <b>Full-Stack Development</b>
+</p>
+
+---
+
 ## 🛠️ Languages, Tools & Tech
 
 <p align="center">
