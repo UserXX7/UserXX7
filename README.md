@@ -46,32 +46,12 @@
 ## 🛠️ Languages, Tools & Tech
 
 <p align="center">
-  <!-- Frontend -->
-  <img src="https://skillicons.dev/icons?i=html,css,js" />
-  <br/>
+  <img src="https://skillicons.dev/icons?i=html,css,js,php,python,java,cpp,cs,kotlin,swift,mysql,firebase,git,github,vscode,linux,androidstudio,figma,ps" />
+</p>
 
-  <!-- Backend / Programming -->
-  <img src="https://skillicons.dev/icons?i=php,python,java,cpp,cs,kotlin,swift" />
-  <br/>
-
-  <!-- Database & Backend Services -->
-  <img src="https://skillicons.dev/icons?i=mysql,firebase" />
-  <br/>
-
-  <!-- Automation / APIs -->
+<p align="center">
   <img src="https://img.shields.io/badge/Google_Apps_Script-34A853?style=for-the-badge&logo=google&logoColor=white" />
-  <br/>
-
-  <!-- Tools & Dev -->
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,linux,androidstudio" />
-  <br/>
-
-  <!-- Apple Dev -->
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white" />
-  <br/>
-
-  <!-- Design -->
-  <img src="https://skillicons.dev/icons?i=figma,ps" />
 </p>
 
 ---
