@@ -64,6 +64,14 @@
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white" />
 </p>
 
+---
+
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats-sigma-five.vercel.app/api?username=UserXX7&show_icons=true&theme=dark" /></td>
+    <td><img src="https://streak-stats.demolab.com?user=UserXX7&theme=dark" alt="UserXX7" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -94,12 +102,4 @@
 </p>
 
 
----
-
-<table>
-  <tr>
-    <td><img src="https://github-readme-stats-sigma-five.vercel.app/api?username=UserXX7&show_icons=true&theme=dark" /></td>
-    <td><img src="https://streak-stats.demolab.com?user=UserXX7&theme=dark" alt="UserXX7" /></td>
-  </tr>
-</table>
 
