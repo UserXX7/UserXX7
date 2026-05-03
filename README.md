@@ -98,8 +98,8 @@
 
 <table>
   <tr>
-    <td><img src="https://github-readme-stats-sigma-five.vercel.app/api?username=arfgit&show_icons=true&theme=dark" /></td>
-    <td><img src="https://streak-stats.demolab.com?user=arfgit&theme=dark" alt="arfgit" /></td>
+    <td><img src="https://github-readme-stats-sigma-five.vercel.app/api?username=UserXX7&show_icons=true&theme=dark" /></td>
+    <td><img src="https://streak-stats.demolab.com?user=UserXX7&theme=dark" alt="UserXX7" /></td>
   </tr>
 </table>
 
