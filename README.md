@@ -96,8 +96,10 @@
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=UserXX7&show_icons=true&theme=tokyonight&v=2" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=UserXX7&layout=compact&theme=tokyonight&v=2" />
-</p>
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats-sigma-five.vercel.app/api?username=arfgit&show_icons=true&theme=dark" /></td>
+    <td><img src="https://streak-stats.demolab.com?user=arfgit&theme=dark" alt="arfgit" /></td>
+  </tr>
+</table>
 
