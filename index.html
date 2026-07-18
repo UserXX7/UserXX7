@@ -3,836 +3,1283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alif R. Rony - Portfolio</title>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Alif R. Rony | Software Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio of Alif R. Rony — software engineering student, AFRL research intern, backend automation builder, and full-stack developer."
+  />
+  <meta name="theme-color" content="#020617" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 
   <style>
-  :root {
-    --accent: #0ea5e9;              /* neon cyan */
-    --accent-strong: #38bdf8;
-    --accent-soft: rgba(14, 165, 233, 0.18);
-    --text-main: #e5f2ff;
-    --text-muted: #9ca3af;
-    --card-bg: #020617;
-    --border-subtle: rgba(148, 163, 184, 0.35);
-    --radius-lg: 18px;
-    --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.9);
-  }
+    :root {
+      --bg: #020617;
+      --bg-soft: #07111f;
+      --panel: rgba(4, 13, 28, 0.86);
+      --panel-strong: rgba(5, 17, 34, 0.96);
+      --cyan: #22d3ee;
+      --cyan-bright: #67e8f9;
+      --blue: #0ea5e9;
+      --violet: #8b5cf6;
+      --green: #34d399;
+      --text: #e6f6ff;
+      --muted: #8ea4b8;
+      --border: rgba(34, 211, 238, 0.24);
+      --border-strong: rgba(34, 211, 238, 0.58);
+      --shadow: 0 22px 70px rgba(0, 0, 0, 0.55);
+      --glow: 0 0 28px rgba(34, 211, 238, 0.22);
+      --radius: 18px;
+      --mono: "JetBrains Mono", monospace;
+      --sans: "Inter", sans-serif;
+    }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  html {
-    scroll-behavior: smooth;
-  }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
 
-  body {
-    font-family: "Poppins", Arial, sans-serif;
-    background:
-      radial-gradient(circle at top left, #1d2538 0, transparent 55%),
-      radial-gradient(circle at bottom right, #0f172a 0, transparent 55%),
-      radial-gradient(circle at top right, #0f172a 0, #020617 60%);
-    margin: 0;
-    padding: 20px;
-    color: var(--text-main);
-  }
+    body {
+      min-height: 100vh;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(14, 165, 233, 0.18), transparent 28%),
+        radial-gradient(circle at 88% 10%, rgba(139, 92, 246, 0.16), transparent 26%),
+        radial-gradient(circle at 50% 100%, rgba(34, 211, 238, 0.09), transparent 35%),
+        var(--bg);
+      overflow-x: hidden;
+    }
 
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98) 0, #020617 60%);
-    backdrop-filter: blur(22px);
-    padding: 28px 32px 40px;
-    border-radius: 24px;
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(148, 163, 184, 0.5);
-    position: relative;
-    overflow: hidden;
-  }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      background-image:
+        linear-gradient(rgba(34, 211, 238, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 211, 238, 0.035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent 90%);
+    }
 
-  .container::before {
-    content: "";
-    position: absolute;
-    width: 380px;
-    height: 380px;
-    background:
-      radial-gradient(circle, rgba(56,189,248,0.25), transparent 60%),
-      radial-gradient(circle, rgba(129,140,248,0.28), transparent 65%);
-    top: -150px;
-    right: -150px;
-    mix-blend-mode: screen;
-    pointer-events: none;
-    opacity: 0.9;
-  }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 100;
+      opacity: 0.12;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 3px,
+        rgba(255, 255, 255, 0.02) 4px
+      );
+    }
 
-  /* ====== TOP NAV ====== */
-  .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-    position: sticky;
-    top: 10px;
-    z-index: 10;
-    background: linear-gradient(90deg, rgba(15,23,42,0.96), rgba(15,23,42,0.94));
-    border-radius: 999px;
-    padding: 8px 16px;
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.85);
-  }
+    ::selection {
+      background: rgba(34, 211, 238, 0.28);
+      color: #ffffff;
+    }
 
-  .brand {
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-transform: uppercase;
-    color: var(--text-main);
-  }
+    a {
+      color: inherit;
+    }
 
-  .brand i {
-    color: var(--accent);
-  }
+    img {
+      max-width: 100%;
+    }
 
-  .nav-links {
-    display: flex;
-    gap: 14px;
-    font-size: 0.9rem;
-  }
+    .shell {
+      width: min(1180px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 18px 0 48px;
+    }
 
-  .nav-links a {
-    text-decoration: none;
-    color: var(--text-muted);
-    padding: 6px 12px;
-    border-radius: 999px;
-    transition: 0.2s ease;
-  }
+    .topbar {
+      position: sticky;
+      top: 12px;
+      z-index: 50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 11px 16px;
+      margin-bottom: 26px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(2, 6, 23, 0.82);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35), var(--glow);
+    }
 
-  .nav-links a:hover {
-    background: rgba(15, 23, 42, 0.9);
-    color: var(--accent);
-    box-shadow: 0 0 12px rgba(14,165,233,0.6);
-  }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 0.86rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
 
-  /* ====== HEADER / HERO ====== */
-  .header-section {
-    text-align: center;
-    margin-bottom: 32px;
-    animation: fadeIn 0.9s ease-in-out;
-    position: relative;
-    z-index: 1;
-  }
+    .brand-mark {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 16px rgba(52, 211, 153, 0.95);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
+    @keyframes pulse {
+      0%, 100% { transform: scale(0.9); opacity: 0.75; }
+      50% { transform: scale(1.15); opacity: 1; }
+    }
 
-  .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent-strong);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.95);
-    margin-bottom: 16px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.3s ease;
-    background: #020617;
-  }
-
-  .profile-img:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow:
-      0 0 28px rgba(56,189,248,0.9),
-      0 18px 45px rgba(0,0,0,1);
-  }
-
-  h1 {
-    font-size: 2.6rem;
-    color: var(--accent-strong);
-    margin-bottom: 4px;
-    text-shadow: 0 0 18px rgba(56,189,248,0.45);
-  }
-
-  .subtitle {
-    font-size: 1.05rem;
-    color: var(--text-muted);
-    margin-bottom: 14px;
-  }
-
-  .contact p {
-    margin: 3px 0;
-    font-size: 0.95rem;
-    color: var(--text-main);
-  }
-
-  .contact a {
-    color: var(--accent-strong);
-    text-decoration: none;
-  }
-
-  .contact a:hover {
-    text-decoration: underline;
-  }
-
-  .contact i {
-    margin-right: 6px;
-    color: var(--accent);
-  }
-
-  .links {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
-    border-radius: 999px;
-    border: 1px solid rgba(56,189,248,0.8);
-    color: var(--accent-strong);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: 0.25s ease;
-    background: rgba(15,23,42,0.9);
-    box-shadow: 0 0 0 rgba(0,0,0,0);
-  }
-
-  .links button.social-btn {
-  border: none;
-  background: transparent;
-  color: inherit;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  cursor: pointer;
-  }
-
-  .links a.primary {
-    background: radial-gradient(circle at top left, #22d3ee, #0ea5e9 55%, #0369a1);
-    color: #0b1220;
-    box-shadow: 0 16px 35px rgba(56,189,248,0.7);
-  }
-
-  .links a:hover {
-    background: radial-gradient(circle at top, #0ea5e9, #22d3ee);
-    color: #020617;
-    box-shadow: 0 0 25px rgba(56,189,248,1);
-    transform: translateY(-2px);
-  }
-
-  /* ====== MAIN LAYOUT ====== */
-  .main-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.1fr);
-    gap: 22px;
-    align-items: flex-start;
-  }
-
-  @media (max-width: 800px) {
-    .top-nav {
-      flex-direction: column;
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
       gap: 6px;
     }
-    .main-grid {
-      grid-template-columns: 1fr;
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.83rem;
+      padding: 7px 11px;
+      border-radius: 999px;
+      transition: 0.2s ease;
     }
-    .container {
-      padding: 20px 17px 32px;
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--cyan-bright);
+      background: rgba(34, 211, 238, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(34, 211, 238, 0.22);
     }
-  }
 
-  /* ====== SECTIONS (CARDS) ====== */
-  .section {
-    margin-bottom: 20px;
-    text-align: left;
-    background: radial-gradient(circle at top left, rgba(15,23,42,0.95), #020617 70%);
-    padding: 18px 20px;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.75);
-    border: 1px solid var(--border-subtle);
-    position: relative;
-    overflow: hidden;
-  }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 30px;
+      align-items: center;
+      padding: clamp(28px, 5vw, 58px);
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgba(7, 17, 31, 0.96), rgba(2, 6, 23, 0.92)),
+        var(--panel);
+      box-shadow: var(--shadow), var(--glow);
+    }
 
-  .section::before {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(56,189,248,0.2), transparent 70%);
-    top: -70px;
-    right: -40px;
-    opacity: 0.7;
-    pointer-events: none;
-  }
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -170px;
+      top: -190px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(34, 211, 238, 0.24), transparent 68%);
+      filter: blur(4px);
+    }
 
-  .section-title {
-    font-size: 1.25rem;
-    border-bottom: 1px solid rgba(55,65,81,0.9);
-    padding-bottom: 6px;
-    margin-bottom: 10px;
-    color: var(--accent-strong);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, transparent 49.6%, rgba(34,211,238,0.055) 50%, transparent 50.4%),
+        linear-gradient(transparent 49.6%, rgba(34,211,238,0.045) 50%, transparent 50.4%);
+      background-size: 56px 56px;
+      mask-image: linear-gradient(to right, transparent, rgba(0,0,0,0.7));
+    }
 
-  .section-title i {
-    font-size: 1rem;
-  }
+    .hero-copy,
+    .hero-visual {
+      position: relative;
+      z-index: 1;
+    }
 
-  .section p {
-    font-size: 0.94rem;
-    color: var(--text-main);
-  }
+    .terminal-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 12px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(52, 211, 153, 0.32);
+      border-radius: 999px;
+      background: rgba(52, 211, 153, 0.07);
+      color: #86efac;
+      font: 600 0.78rem var(--mono);
+      letter-spacing: 0.03em;
+    }
 
-  .section ul {
-    padding-left: 18px;
-    margin-top: 4px;
-    font-size: 0.9rem;
-    color: var(--text-main);
-  }
+    .terminal-label::before {
+      content: ">";
+      color: var(--green);
+    }
 
-  .section ul li {
-    margin-bottom: 4px;
-  }
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.9rem);
+      line-height: 0.95;
+      letter-spacing: -0.065em;
+      margin-bottom: 18px;
+    }
 
-  .section ul li::marker {
-    color: var(--accent-strong);
-  }
+    h1 .accent {
+      display: block;
+      color: var(--cyan-bright);
+      text-shadow: 0 0 30px rgba(34, 211, 238, 0.34);
+    }
 
-  /* ====== SKILLS ====== */
-  .skills-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 8px;
-  }
+    .hero-role {
+      min-height: 32px;
+      margin-bottom: 16px;
+      color: var(--cyan);
+      font: 600 clamp(1rem, 2.2vw, 1.22rem) var(--mono);
+    }
 
-  .skill-pill {
-    background: rgba(15,23,42,0.95);
-    border-radius: 999px;
-    padding: 5px 12px;
-    font-size: 0.8rem;
-    color: var(--accent-strong);
-    border: 1px solid rgba(56,189,248,0.9);
-    font-weight: 500;
-    white-space: nowrap;
-    box-shadow: 0 0 12px rgba(56,189,248,0.4);
-  }
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 1.15em;
+      margin-left: 5px;
+      vertical-align: -0.15em;
+      background: var(--cyan);
+      animation: blink 0.85s steps(1) infinite;
+    }
 
-  .skills-subgroup {
-    margin-top: 6px;
-    margin-bottom: 8px;
-  }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
 
-  .skills-subgroup span.label {
-    font-weight: 600;
-    font-size: 0.86rem;
-    color: var(--text-muted);
-    display: inline-block;
-    margin-bottom: 3px;
-  }
+    .hero-summary {
+      max-width: 720px;
+      color: #c6d7e4;
+      font-size: 1.02rem;
+      line-height: 1.78;
+    }
 
-  /* ====== PROJECT CARDS ====== */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
+    .hero-summary strong {
+      color: #ffffff;
+    }
 
-  @media (min-width: 700px) {
-    .projects-grid {
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--border-strong);
+      border-radius: 11px;
+      color: var(--cyan-bright);
+      background: rgba(2, 6, 23, 0.74);
+      text-decoration: none;
+      font: 600 0.86rem var(--mono);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: rgba(34, 211, 238, 0.08);
+      box-shadow: 0 0 24px rgba(34, 211, 238, 0.2);
+    }
+
+    .btn.primary {
+      color: #00111b;
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--cyan-bright), var(--blue));
+      box-shadow: 0 14px 35px rgba(14, 165, 233, 0.26);
+    }
+
+    .hero-visual {
+      display: grid;
+      justify-items: center;
+      gap: 18px;
+    }
+
+    .profile-frame {
+      position: relative;
+      width: min(280px, 72vw);
+      aspect-ratio: 1;
+      padding: 8px;
+      border-radius: 28px;
+      background:
+        linear-gradient(#020617, #020617) padding-box,
+        linear-gradient(135deg, var(--cyan), transparent 45%, var(--violet)) border-box;
+      border: 1px solid transparent;
+      box-shadow: 0 0 42px rgba(34, 211, 238, 0.16);
+    }
+
+    .profile-frame::before,
+    .profile-frame::after {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      pointer-events: none;
+    }
+
+    .profile-frame::before {
+      top: -8px;
+      left: -8px;
+      border-top: 2px solid var(--cyan);
+      border-left: 2px solid var(--cyan);
+    }
+
+    .profile-frame::after {
+      right: -8px;
+      bottom: -8px;
+      border-right: 2px solid var(--violet);
+      border-bottom: 2px solid var(--violet);
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 20px;
+      filter: saturate(0.9) contrast(1.04);
+    }
+
+    .status-card {
+      width: 100%;
+      max-width: 310px;
+      padding: 14px;
+      border: 1px solid rgba(34, 211, 238, 0.2);
+      border-radius: 14px;
+      background: rgba(2, 6, 23, 0.76);
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .status-card b {
+      color: var(--green);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+    }
+
+    .stat-value {
+      color: var(--cyan-bright);
+      font: 700 1.65rem var(--mono);
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(310px, 0.8fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .section {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 24px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, rgba(7, 17, 31, 0.92), rgba(2, 6, 23, 0.9));
+      box-shadow: 0 14px 40px rgba(0,0,0,0.28);
+    }
+
+    .section::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 82px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--cyan), transparent);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 18px;
+    }
+
+    .section-index {
+      color: var(--cyan);
+      font: 600 0.76rem var(--mono);
+    }
+
+    .section-title {
+      font-size: 1.18rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section p {
+      color: #c1d1de;
+      line-height: 1.75;
+      font-size: 0.94rem;
+    }
+
+    .project-grid {
+      display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
     }
-  }
 
-  .project-card {
-    background: linear-gradient(135deg, #020617, #020617 40%, #0f172a 100%);
-    border-radius: 16px;
-    padding: 14px 14px 16px;
-    border: 1px solid rgba(56,189,248,0.7);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.95);
-    transition: 0.25s ease;
-    position: relative;
-    overflow: hidden;
-  }
+    .project-card {
+      position: relative;
+      min-height: 245px;
+      padding: 18px;
+      border: 1px solid rgba(34, 211, 238, 0.18);
+      border-radius: 15px;
+      background: linear-gradient(150deg, rgba(7, 20, 37, 0.96), rgba(2, 6, 23, 0.96));
+      transition: 0.22s ease;
+    }
 
-  .project-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top left, rgba(56,189,248,0.4), transparent 55%);
-    opacity: 0;
-    transition: 0.25s ease;
-    mix-blend-mode: screen;
-  }
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(34, 211, 238, 0.55);
+      box-shadow: 0 18px 36px rgba(0,0,0,0.35), 0 0 24px rgba(34, 211, 238, 0.1);
+    }
 
-  .project-card:hover {
-    transform: translateY(-4px) scale(1.01);
-    box-shadow: 0 24px 55px rgba(0,0,0,1);
-  }
+    .project-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
 
-  .project-card:hover::before {
-    opacity: 1;
-  }
+    .project-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(34, 211, 238, 0.09);
+      color: var(--cyan-bright);
+      border: 1px solid rgba(34, 211, 238, 0.22);
+    }
 
-  .project-title {
-    font-weight: 600;
-    margin-bottom: 2px;
-    color: var(--accent-strong);
-  }
+    .project-status {
+      color: var(--green);
+      font: 600 0.68rem var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
 
-  .project-meta {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-bottom: 6px;
-  }
+    .project-card h3 {
+      margin-bottom: 8px;
+      color: #ffffff;
+      font-size: 1rem;
+    }
 
-  /* ====== EXPERIENCE TIMELINE ====== */
-  .timeline {
-    border-left: 2px solid rgba(55,65,81,0.9);
-    margin-left: 6px;
-    padding-left: 16px;
-  }
+    .project-card p {
+      font-size: 0.86rem;
+      line-height: 1.65;
+    }
 
-  .exp-item {
-    margin-bottom: 14px;
-    position: relative;
-    padding-left: 4px;
-  }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
 
-  .exp-item::before {
-    content: "";
-    position: absolute;
-    left: -19px;
-    top: 7px;
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: var(--accent-strong);
-    box-shadow: 0 0 0 4px rgba(56,189,248,0.4);
-  }
+    .tag {
+      padding: 5px 8px;
+      border-radius: 7px;
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.22);
+      color: #c4b5fd;
+      font: 500 0.67rem var(--mono);
+    }
 
-  .exp-role {
-    font-weight: 600;
-    font-size: 0.97rem;
-  }
+    .timeline {
+      position: relative;
+      padding-left: 20px;
+    }
 
-  .exp-org {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 2px;
-  }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 6px;
+      bottom: 8px;
+      width: 1px;
+      background: linear-gradient(var(--cyan), rgba(34, 211, 238, 0.06));
+    }
 
-  .exp-dates {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-bottom: 4px;
-  }
+    .timeline-item {
+      position: relative;
+      padding: 0 0 22px 16px;
+    }
 
-  .exp-item ul {
-    margin-top: 4px;
-  }
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
 
-  /* ====== FOOTER ====== */
-  .footer-note {
-    margin-top: 22px;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-  }
-</style>
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 7px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 0 5px rgba(34, 211, 238, 0.1), 0 0 15px rgba(34, 211, 238, 0.7);
+    }
 
+    .role-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 4px;
+    }
+
+    .role-line h3 {
+      font-size: 0.98rem;
+      color: #ffffff;
+    }
+
+    .date {
+      flex: 0 0 auto;
+      color: var(--cyan);
+      font: 500 0.72rem var(--mono);
+    }
+
+    .org {
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 7px;
+    }
+
+    .timeline-item ul,
+    .compact-list {
+      padding-left: 18px;
+      color: #bdd0de;
+      font-size: 0.86rem;
+      line-height: 1.62;
+    }
+
+    .timeline-item li,
+    .compact-list li {
+      margin-bottom: 6px;
+    }
+
+    li::marker {
+      color: var(--cyan);
+    }
+
+    .skill-group + .skill-group {
+      margin-top: 16px;
+    }
+
+    .skill-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font: 600 0.75rem var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .skill {
+      padding: 7px 9px;
+      border: 1px solid rgba(34, 211, 238, 0.21);
+      border-radius: 8px;
+      background: rgba(34, 211, 238, 0.055);
+      color: #c8f7ff;
+      font: 500 0.72rem var(--mono);
+    }
+
+    .education-card + .education-card {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(148, 163, 184, 0.14);
+    }
+
+    .education-card h3 {
+      color: #ffffff;
+      font-size: 0.94rem;
+      margin-bottom: 5px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .edu-date {
+      display: inline-block;
+      margin-top: 7px;
+      color: var(--cyan);
+      font: 500 0.72rem var(--mono);
+    }
+
+    .contact-stack {
+      display: grid;
+      gap: 9px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 12px;
+      border: 1px solid rgba(34, 211, 238, 0.16);
+      border-radius: 10px;
+      color: #c7d7e4;
+      text-decoration: none;
+      font-size: 0.84rem;
+      transition: 0.2s ease;
+    }
+
+    .contact-link i {
+      width: 18px;
+      color: var(--cyan);
+      text-align: center;
+    }
+
+    .contact-link:hover {
+      color: #ffffff;
+      border-color: rgba(34, 211, 238, 0.45);
+      background: rgba(34, 211, 238, 0.055);
+    }
+
+    .footer {
+      margin-top: 8px;
+      padding: 24px 12px 0;
+      text-align: center;
+      color: #6f8799;
+      font: 500 0.74rem var(--mono);
+    }
+
+    .footer span {
+      color: var(--cyan);
+    }
+
+    @media (max-width: 950px) {
+      .hero,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        grid-template-columns: auto minmax(240px, 1fr);
+        justify-items: start;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar {
+        position: static;
+        border-radius: 18px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding: 28px 20px;
+      }
+
+      .hero-visual {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .role-line {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .shell {
+        width: min(100% - 18px, 1180px);
+      }
+
+      .nav-links a {
+        padding: 6px 8px;
+        font-size: 0.76rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .stat {
+        padding: 14px;
+      }
+
+      .section {
+        padding: 20px 16px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
-<body>
 
-  <div class="container">
-    <!-- NAV -->
-    <div class="top-nav">
-      <div class="brand">
-        <i class="fa-solid fa-code"></i> ALIF RONY
-      </div>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        ALIF_RONY::PORTFOLIO
+      </a>
+
       <div class="nav-links">
-        <a href="#summary">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#education">Education</a>
       </div>
-    </div>
+    </nav>
 
-    <!-- HERO / HEADER -->
-    <div class="header-section">
-      <!-- 🔁 Replace src with your actual image file name -->
-      <img src="images/IMG_6071.JPG" alt="Alif Rony" class="profile-img" />
+    <header class="hero" id="home">
+      <div class="hero-copy">
+        <div class="terminal-label">system online · open to software engineering opportunities</div>
 
-      <h1>Alif Rony</h1>
-      <p class="subtitle">Aspiring Software Engineer · Full-Stack Developer · API & Automation Enthusiast</p>
+        <h1>
+          Alif R.
+          <span class="accent">Rony</span>
+        </h1>
 
-      <div class="contact">
-        <p><i class="fa-solid fa-location-dot"></i> Woodside, NY 11377</p>
-        <p>
-          <i class="fa-solid fa-phone"></i> (631) 408-7177 ·
-          <a href="mailto:alifreza@live.com">
-            <i class="fa-solid fa-envelope"></i> alifreza@live.com
-          </a>
-        </p>
-      </div>
-
-      <div class="links">
-        <a href="images/Resume_Alif_Rony.pdf" download class="primary">
-          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-        </a>
-        <a href="https://www.linkedin.com/in/alif-rony/" target="_blank">
-          <button class="social-btn linkedin">LinkedIn</button>
-        </a>
-        <a href="https://github.com/UserXX7" target="_blank">
-          <button class="social-btn github">GitHub</button>
-        </a>
-        <a href="https://devpost.com/alifrony55" target="_blank">
-          <button class="social-btn devpost">Devpost</button>
-        </a>
-      </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-grid">
-      <!-- LEFT COLUMN -->
-      <div>
-        <!-- SUMMARY -->
-<div class="section" id="summary">
-  <h2 class="section-title">
-    <i class="fa-solid fa-user"></i> Professional Summary
-  </h2>
-
-  <p>
-    Aspiring Software Engineer and Programming student with hands-on experience developing web applications, automation systems, and full-stack software projects. Skilled in HTML, CSS, JavaScript, PHP, MySQL, C#, Java, and API integration. Experienced in building real-world projects including CRM automation tools, POS systems, and dynamic web platforms. Passionate about software engineering, backend systems, automation, and creating technology-driven solutions to solve real-world problems.
-  </p>
-</div>
-
-          <!-- PROJECTS -->
-          <div class="section" id="projects">
-            <h2 class="section-title">
-              <i class="fa-solid fa-folder-open"></i> Featured Projects
-            </h2>
-
-            <div class="projects-grid">
-
-              <!-- PROJECT 1 -->
-              <div class="project-card">
-                <div class="project-title">
-                  Instagram CRM Automation System
-                </div>
-
-                <div class="project-meta">
-                  <i class="fa-solid fa-robot"></i>
-                  Google Apps Script · Meta Graph API · Google Sheets
-                </div>
-
-                <ul>
-                  <li>
-                    Built a multi-account Instagram DM automation and CRM system using Google Apps Script and Meta APIs.
-                  </li>
-
-                  <li>
-                    Implemented webhook event handling, automated replies, user tracking, and dashboard management tools.
-                  </li>
-                </ul>
-              </div>
-
-              <!-- PROJECT 2 -->
-              <div class="project-card">
-                <div class="project-title">
-                  Jobscript – Resume Builder & Matcher
-                </div>
-
-                <div class="project-meta">
-                  <i class="fa-solid fa-briefcase"></i>
-                  Web App · Firebase
-                </div>
-
-                <ul>
-                  <li>
-                    Built a job-matching platform with dynamic resume generation tools.
-                  </li>
-
-                  <li>
-                    Integrated Firebase authentication and basic user data handling.
-                  </li>
-                </ul>
-              </div>
-
-              <!-- PROJECT 3 -->
-              <div class="project-card">
-                <div class="project-title">
-                  FlourSync – Retail POS System
-                </div>
-
-                <div class="project-meta">
-                  <i class="fa-solid fa-cash-register"></i>
-                  C# · .NET MAUI · MySQL
-                </div>
-
-                <ul>
-                  <li>
-                    Designed full POS interface in Figma for a real bakery business.
-                  </li>
-
-                  <li>
-                    Implemented core screens with C#, .NET MAUI and MySQL backend.
-                  </li>
-                </ul>
-              </div>
-
-              <!-- PROJECT 4 -->
-              <div class="project-card">
-                <div class="project-title">
-                  Zafar’s Cafe & Grocery Web Platform
-                </div>
-
-                <div class="project-meta">
-                  <i class="fa-solid fa-store"></i>
-                  PHP · MySQL · JavaScript
-                </div>
-
-                <ul>
-                  <li>
-                    Developing a dynamic full-stack grocery and cafe platform using PHP and MySQL.
-                  </li>
-
-                  <li>
-                    Implemented product management, authentication, search functionality, and responsive UI features.
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-
-        <!-- EXPERIENCE -->
-          <div class="section" id="experience">
-            <h2 class="section-title">
-              <i class="fa-solid fa-briefcase"></i> Professional Experience
-            </h2>
-
-            <div class="timeline">
-
-              <div class="exp-item">
-                <div class="exp-role">
-                  Computer Technology Intern
-                </div>
-
-                <div class="exp-org">
-                  Sensible Bakery · Long Island City, NY
-                </div>
-
-                <div class="exp-dates">
-                  2026 – Present
-                </div>
-
-                <ul>
-                  <li>
-                    Developing Instagram CRM automation systems using Google Apps Script, Meta Graph API, and Google Sheets.
-                  </li>
-
-                  <li>
-                    Built webhook-based messaging workflows, automated reply systems, and customer interaction tracking tools.
-                  </li>
-
-                  <li>
-                    Assisted in improving operational efficiency through automation and lightweight dashboard solutions.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="exp-item">
-                <div class="exp-role">
-                  Operations Manager
-                </div>
-
-                <div class="exp-org">
-                  Ideal Foods
-                </div>
-
-                <div class="exp-dates">
-                  2022 – Present
-                </div>
-
-                <ul>
-                  <li>
-                    Managed daily business operations, inventory systems, scheduling, and workflow coordination.
-                  </li>
-
-                  <li>
-                    Oversaw technical and operational processes supporting high-volume business activities.
-                  </li>
-
-                  <li>
-                    Implemented process improvements and automation solutions to increase efficiency and reduce manual tasks.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="exp-item">
-                <div class="exp-role">
-                  Store Manager
-                </div>
-
-                <div class="exp-org">
-                  Bagel Point
-                </div>
-
-                <div class="exp-dates">
-                  2018 – 2022
-                </div>
-
-                <ul>
-                  <li>
-                    Managed restaurant operations, employee scheduling, inventory tracking, and customer service workflows.
-                  </li>
-
-                  <li>
-                    Helped launch and operate a new business location while improving operational organization.
-                  </li>
-
-                  <li>
-                    Created digital menu systems and supported customer engagement initiatives.
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-      </div>
-      <!-- RIGHT COLUMN -->
-      <div>
-        <!-- SKILLS -->
-        <div class="section" id="skills">
-          <h2 class="section-title">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> Technical Skills
-          </h2>
-
-          <div class="skills-subgroup">
-            <span class="label">Languages</span>
-            <div class="skills-wrap">
-              <span class="skill-pill">HTML</span>
-              <span class="skill-pill">CSS</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">C++</span>
-              <span class="skill-pill">C#</span>
-              <span class="skill-pill">Java</span>
-            </div>
-          </div>
-
-          <div class="skills-subgroup">
-            <span class="label">Web Development</span>
-            <div class="skills-wrap">
-              <span class="skill-pill">Responsive Design</span>
-              <span class="skill-pill">UI/UX Principles</span>
-              <span class="skill-pill">DOM Manipulation</span>
-            </div>
-          </div>
-
-          <div class="skills-subgroup">
-            <span class="label">Tools & Platforms</span>
-            <div class="skills-wrap">
-              <span class="skill-pill">Git</span>
-              <span class="skill-pill">GitHub</span>
-              <span class="skill-pill">MySQL</span>
-              <span class="skill-pill">Visual Studio</span>
-              <span class="skill-pill">Linux</span>
-            </div>
-          </div>
-
-          <div class="skills-subgroup">
-            <span class="label">Design & Other</span>
-            <div class="skills-wrap">
-              <span class="skill-pill">Figma</span>
-              <span class="skill-pill">Adobe Photoshop</span>
-              <span class="skill-pill">Project Management</span>
-            </div>
-          </div>
+        <div class="hero-role" aria-live="polite">
+          <span id="typing-text">Software &amp; Systems Research Intern</span><span class="cursor" aria-hidden="true"></span>
         </div>
 
-        <!-- EDUCATION -->
-          <div class="section" id="education">
-            <h2 class="section-title">
-              <i class="fa-solid fa-graduation-cap"></i> Education
-            </h2>
+        <p class="hero-summary">
+          Software engineering student and builder working across
+          <strong>secure systems research, backend automation, APIs, and full-stack products</strong>.
+          I turn operational problems into practical software used by real businesses.
+        </p>
 
-            <p>
-              <strong>LaGuardia Community College (CUNY)</strong><br>
-              AAS in Programming &amp; Software Development<br>
+        <div class="hero-actions">
+          <a class="btn primary" href="images/Resume_Alif_Rony.pdf" download>
+            <i class="fa-solid fa-file-arrow-down"></i>
+            Download Resume
+          </a>
 
-              <span style="font-size:0.9rem; color:var(--text-muted);">
-                Expected Graduation: June 2026
-              </span>
-            </p>
+          <a class="btn" href="https://github.com/UserXX7" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
 
-            <ul>
-              <li>Data Structures</li>
-              <li>Algorithms</li>
-              <li>Web Development</li>
-              <li>Object-Oriented Programming</li>
-              <li>Database Systems</li>
-              <li>Software Development</li>
-            </ul>
+          <a class="btn" href="https://www.linkedin.com/in/alif-rony/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
 
-            <br>
-
-            <h3 style="color: var(--accent-strong); margin-bottom: 10px;">
-              Certifications & Programs
-            </h3>
-
-            <ul>
-              <li>LaGuardia Hackathon 2026 – 1st Place Winner</li>
-
-              <li>LaGuardia Hackathon 2025 – 4th Place Team</li>
-
-              <li>Tech Talent Pipeline (TTP) Residency Program</li>
-
-              <li>Code2Career Spring 2026 Career Development Program</li>
-
-              <li>BASTA Career Readiness & Mentorship Program</li>
-
-              <li>National Society of Leadership & Success (NSLS) Member</li>
-
-              <li>IBM SkillsBuild – Introduction to Software Engineering Certificate</li>
-
-              <li>Google Data Analytics – Foundations: Data, Data, Everywhere</li>
-
-            </ul>
-          </div>
+          <a class="btn" href="mailto:alifreza@live.com">
+            <i class="fa-solid fa-paper-plane"></i>
+            Contact
+          </a>
+        </div>
       </div>
+
+      <div class="hero-visual">
+        <div class="profile-frame">
+          <img
+            src="images/IMG_6071.JPG"
+            alt="Portrait of Alif Rony"
+            class="profile-img"
+          />
+        </div>
+
+        <div class="status-card" aria-label="Current status">
+          <div><b>STATUS:</b> building + researching</div>
+          <div><b>FOCUS:</b> backend / systems / automation</div>
+          <div><b>LOCATION:</b> Woodside, New York</div>
+          <div><b>EDUCATION:</b> Baruch CS · 2028</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="stats-grid" aria-label="Career highlights">
+      <article class="stat">
+        <div class="stat-value">25%</div>
+        <div class="stat-label">manual work reduced through CRM automation</div>
+      </article>
+
+      <article class="stat">
+        <div class="stat-value">$600K</div>
+        <div class="stat-label">inventory managed in business operations</div>
+      </article>
+
+      <article class="stat">
+        <div class="stat-value">1st</div>
+        <div class="stat-label">place at LaGuardia CC Hackathon 2026</div>
+      </article>
+
+      <article class="stat">
+        <div class="stat-value">4+</div>
+        <div class="stat-label">production-focused software projects</div>
+      </article>
+    </section>
+
+    <div class="layout">
+      <div>
+        <section class="section" id="about">
+          <div class="section-header">
+            <span class="section-index">01.</span>
+            <h2 class="section-title">About</h2>
+          </div>
+
+          <p>
+            I am a software engineering student with experience in secure virtualization research,
+            full-stack development, business automation, and system design. At the Air Force Research
+            Laboratory, I study technologies including <strong>seL4, Microkit, and Kata Containers</strong>.
+            At Sensible Bakery, I built a Meta-approved Instagram automation and CRM workflow that
+            reduced repetitive manual work by 25%. My background in operations helps me design software
+            around real users, real constraints, and measurable outcomes.
+          </p>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-header">
+            <span class="section-index">02.</span>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-topline">
+                <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                <span class="project-status">production use</span>
+              </div>
+              <h3>Instagram CRM Automation</h3>
+              <p>
+                Built a Meta-approved automation system for DM handling, keyword replies,
+                customer tracking, and dashboard-based workflow management. Reduced manual work by 25%.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Meta Graph API</span>
+                <span class="tag">Webhooks</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">CRM</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <div class="project-icon"><i class="fa-solid fa-store"></i></div>
+                <span class="project-status">full stack</span>
+              </div>
+              <h3>Zafar's Cafe &amp; Grocery</h3>
+              <p>
+                Architected a PHP/MySQL e-commerce platform with secure authentication,
+                product and inventory management, admin tools, search, and order workflows.
+              </p>
+              <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">E-commerce</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <span class="project-status">system design</span>
+              </div>
+              <h3>StoreSense</h3>
+              <p>
+                Designed the backend architecture for a small-business analytics platform that
+                combines sales, expenses, inventory, and vendor pricing into useful insights.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Backend</span>
+                <span class="tag">Analytics</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Architecture</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <div class="project-icon"><i class="fa-solid fa-cash-register"></i></div>
+                <span class="project-status">cross platform</span>
+              </div>
+              <h3>FlourSync</h3>
+              <p>
+                Developed a bakery POS and management system with inventory control,
+                transaction processing, database integration, and end-of-day reporting.
+              </p>
+              <div class="tag-row">
+                <span class="tag">.NET MAUI</span>
+                <span class="tag">C#</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">POS</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="section-header">
+            <span class="section-index">03.</span>
+            <h2 class="section-title">Experience</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="role-line">
+                <h3>Software &amp; Systems Research Intern</h3>
+                <span class="date">JUN 2026 — PRESENT</span>
+              </div>
+              <div class="org">Air Force Research Laboratory (AFRL)</div>
+              <ul>
+                <li>Research secure virtualization technologies including seL4, Microkit, and Kata Containers.</li>
+                <li>Analyze architectural communication flows and deployment considerations.</li>
+                <li>Create technical documentation, architecture diagrams, and implementation guides.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <div class="role-line">
+                <h3>Computer Tech Intern</h3>
+                <span class="date">FEB 2026 — PRESENT</span>
+              </div>
+              <div class="org">Sensible Bakery</div>
+              <ul>
+                <li>Built a Meta-approved Instagram DM automation system and internal CRM/dashboard.</li>
+                <li>Reduced repetitive manual work by 25% through automated workflows.</li>
+                <li>Troubleshoot website, API, and workflow issues to improve operational efficiency.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <div class="role-line">
+                <h3>Operations Manager</h3>
+                <span class="date">SEP 2022 — NOV 2025</span>
+              </div>
+              <div class="org">Ideal Foods</div>
+              <ul>
+                <li>Managed approximately $600K in inventory and daily operational workflows.</li>
+                <li>Introduced process improvements and automation to support profitability and accuracy.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <div class="role-line">
+                <h3>Store Manager</h3>
+                <span class="date">APR 2019 — AUG 2022</span>
+              </div>
+              <div class="org">Bagel Point</div>
+              <ul>
+                <li>Built store operations from the ground up, including staffing, inventory, POS systems, and training.</li>
+                <li>Helped support business expansion across multiple locations.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="section" id="skills">
+          <div class="section-header">
+            <span class="section-index">04.</span>
+            <h2 class="section-title">Technical Stack</h2>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Languages</div>
+            <div class="skills">
+              <span class="skill">Python</span>
+              <span class="skill">Java</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">PHP</span>
+              <span class="skill">C++</span>
+              <span class="skill">C#</span>
+              <span class="skill">Kotlin</span>
+              <span class="skill">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Backend &amp; Web</div>
+            <div class="skills">
+              <span class="skill">REST APIs</span>
+              <span class="skill">Webhooks</span>
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">CRUD</span>
+              <span class="skill">Responsive UI</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Systems &amp; Data</div>
+            <div class="skills">
+              <span class="skill">Linux</span>
+              <span class="skill">seL4</span>
+              <span class="skill">Microkit</span>
+              <span class="skill">Kata Containers</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">Firebase</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-label">Tools</div>
+            <div class="skills">
+              <span class="skill">Git</span>
+              <span class="skill">GitHub</span>
+              <span class="skill">VS Code</span>
+              <span class="skill">Android Studio</span>
+              <span class="skill">Xcode</span>
+              <span class="skill">Figma</span>
+              <span class="skill">.NET MAUI</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="education">
+          <div class="section-header">
+            <span class="section-index">05.</span>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <div class="education-card">
+            <h3>Baruch College, CUNY</h3>
+            <p>Bachelor of Science in Computer Science</p>
+            <span class="edu-date">EXPECTED MAY 2028</span>
+          </div>
+
+          <div class="education-card">
+            <h3>LaGuardia Community College, CUNY</h3>
+            <p>Associate of Applied Science in Programming &amp; Software Development</p>
+            <span class="edu-date">JUNE 2026</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <span class="section-index">06.</span>
+            <h2 class="section-title">Recognition</h2>
+          </div>
+
+          <ul class="compact-list">
+            <li>1st Place — LaGuardia CC Hackathon, 2026</li>
+            <li>CUNY Tech Talent Pipeline Residency</li>
+            <li>Google × Basta Career Development Program, 2026</li>
+            <li>National Society of Leadership and Success, 2025</li>
+            <li>IBM Introduction to Software Engineering, 2026</li>
+            <li>Google Foundations: Data, Data, Everywhere, 2026</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <span class="section-index">07.</span>
+            <h2 class="section-title">Connect</h2>
+          </div>
+
+          <div class="contact-stack">
+            <a class="contact-link" href="mailto:alifreza@live.com">
+              <i class="fa-solid fa-envelope"></i>
+              alifreza@live.com
+            </a>
+
+            <a class="contact-link" href="tel:+16314087177">
+              <i class="fa-solid fa-phone"></i>
+              (631) 408-7177
+            </a>
+
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/alif-rony/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+
+            <a
+              class="contact-link"
+              href="https://github.com/UserXX7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+
+            <a
+              class="contact-link"
+              href="https://devpost.com/alifrony55"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-code"></i>
+              Devpost
+            </a>
+          </div>
+        </section>
+      </aside>
     </div>
 
-    <div class="footer-note">
-      Built by Alif R. Rony · Portfolio &amp; Website Design  2024 
-    </div>
-  </div>
+    <footer class="footer">
+      <span>&lt;/&gt;</span> Designed and built by Alif R. Rony · <span id="year"></span>
+    </footer>
+  </main>
 
+  <script>
+    const roles = [
+      "Software & Systems Research Intern",
+      "Backend & Automation Engineer",
+      "Full-Stack Software Developer",
+      "API, Webhook & CRM Builder"
+    ];
+
+    const typingTarget = document.getElementById("typing-text");
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeRole() {
+      const currentRole = roles[roleIndex];
+
+      if (!deleting) {
+        charIndex += 1;
+        typingTarget.textContent = currentRole.slice(0, charIndex);
+
+        if (charIndex === currentRole.length) {
+          deleting = true;
+          setTimeout(typeRole, 1500);
+          return;
+        }
+      } else {
+        charIndex -= 1;
+        typingTarget.textContent = currentRole.slice(0, charIndex);
+
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+
+      setTimeout(typeRole, deleting ? 38 : 62);
+    }
+
+    setTimeout(typeRole, 900);
+
+    const navLinks = [...document.querySelectorAll(".nav-links a")];
+    const sections = navLinks
+      .map(link => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+
+          navLinks.forEach(link => {
+            link.classList.toggle(
+              "active",
+              link.getAttribute("href") === `#${entry.target.id}`
+            );
+          });
+        });
+      },
+      { rootMargin: "-35% 0px -55% 0px" }
+    );
+
+    sections.forEach(section => observer.observe(section));
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
