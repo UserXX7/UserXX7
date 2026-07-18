@@ -1,140 +1,208 @@
-<!-- Recruiter-focused GitHub Profile README -->
-
+<!-- Top Accent Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=3" alt="" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=2" alt="" />
 </p>
 
-<h1 align="center">Alif R. Rony</h1>
+<h1 align="center" style="color:#38bdf8;">
+  🚀 Alif R. Rony
+</h1>
 
+<p align="center" style="color:#9ca3af;">
+  Software & Systems Research Intern • Backend Engineer • Full-Stack Developer • Automation Builder
+</p>
+
+<!-- Animated Floating/Typing Banner -->
 <p align="center">
-  <strong>Software Engineering Intern @ AFRL</strong><br>
-  Backend Engineering • Automation • Full-Stack Development • Systems Research
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Software+%26+Systems+Research+Intern+%40+AFRL;Building+Real-World+CRM+Automation;Backend+Systems+%7C+APIs+%7C+Webhooks;Turning+Business+Problems+Into+Software"
+    alt="Animated introduction"
+  />
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/alif-rony/">
-    <img src="https://img.shields.io/badge/LinkedIn-Alif_Rony-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-Alif_Rony-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:alifreza@live.com">
-    <img src="https://img.shields.io/badge/Email-alifreza%40live.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Email-alifreza%40live.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://userxx7.github.io/UserXX7/">
-    <img src="https://img.shields.io/badge/Portfolio-View_My_Work-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio">
+    <img src="https://img.shields.io/badge/Portfolio-View_My_Work-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
 </p>
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=2" alt="" />
+</p>
 
 ## 👋 About Me
 
-I am a software engineering student and builder with experience in **secure systems research, backend automation, APIs, and full-stack applications**.
+I am a software engineering student and builder focused on **backend systems, automation, secure computing, and full-stack applications**.
 
 - 🔐 Researching **seL4, Microkit, and Kata Containers** at the Air Force Research Laboratory
 - 🤖 Built a **Meta-approved Instagram DM automation and CRM system** that reduced manual work by **25%**
-- 📦 Previously managed **$600K in inventory** and automated operational workflows
-- 🏆 **1st Place Hackathon Winner** at LaGuardia Community College
-- 🎯 Interested in backend, platform, automation, systems, and full-stack software engineering roles
+- 📦 Managed **$600K in inventory** and automated operational workflows
+- 🏆 Earned **1st Place** at a LaGuardia Community College hackathon
+- 🎯 Seeking software engineering opportunities in backend, systems, automation, platform, and full-stack development
 
 ---
 
-## 🚀 Featured Work
+## 🚀 Featured Project
 
-### 🤖 Instagram CRM & Automation Platform
+### 🤖 CRM + Instagram Automation System
+
 **JavaScript • PHP • MySQL • Meta Graph API • Webhooks**
 
-- Built a production-focused system for automated Instagram DM handling
-- Implemented keyword-based replies, user tracking, and real-time data processing
-- Developed an internal CRM and dashboard for customer interaction management
+- Built a real-time automation platform for a working business
+- Automated Instagram DM handling, keyword-based replies, and user tracking
+- Designed backend workflows to process and store live customer data
+- Developed an internal CRM and dashboard for managing conversations
 - Reduced repetitive manual work by **25%**
 
-### 🛒 Zafar's Cafe & Grocery
-**PHP • MySQL • JavaScript • HTML • CSS**
+---
 
-- Architected and developed a full-stack e-commerce platform
-- Added secure authentication, inventory management, admin tools, and order workflows
-- Digitized core business operations and improved product management
+## 💼 Experience Highlights
+
+### Software & Systems Research Intern — Air Force Research Laboratory
+**June 2026 – Present**
+
+- Research secure virtualization technologies including **seL4, Microkit, and Kata Containers**
+- Analyze architecture, communication flows, and deployment considerations
+- Create technical documentation, diagrams, and implementation guides for the research team
+
+### Computer Tech Intern — Sensible Bakery
+**February 2026 – Present**
+
+- Built a Meta-approved Instagram automation platform and internal CRM
+- Troubleshoot website, API, and workflow issues
+- Improve operational efficiency and digital customer engagement
+
+### Operations Manager — Ideal Foods
+**September 2022 – November 2025**
+
+- Managed approximately **$600K in inventory**
+- Automated workflows to improve daily operations and profitability
+- Applied technology and data to solve practical business problems
+
+---
+
+## 🧩 Selected Projects
+
+### 🛒 Zafar's Cafe & Grocery
+**Full-Stack E-commerce Platform**
+
+- Architected and developed a PHP/MySQL e-commerce application
+- Implemented secure authentication, admin tools, inventory management, and order workflows
+- Digitized business operations and improved product management
 
 ### 📊 StoreSense
-**Backend Architecture • Analytics • Databases**
+**Small-Business Analytics Platform**
 
-- Designed a small-business analytics platform that consolidates sales, inventory, expenses, and vendor pricing
-- Structured the backend to turn operational data into practical business insights
+- Designed the system architecture and backend
+- Consolidated sales, inventory, expenses, and vendor pricing
+- Turned operational data into actionable business insights
 
 ### 🧾 FlourSync
-**.NET MAUI • C# • MySQL**
+**POS & Bakery Management System**
 
-- Developed a POS and bakery-management system
+- Developed with **.NET MAUI, C#, and MySQL**
 - Implemented inventory control, transaction processing, and end-of-day reporting
 
 ---
 
-## 💼 Experience Snapshot
+## 🎯 Current Focus
 
-| Role | Organization | Impact |
-|---|---|---|
-| Software & Systems Research Intern | Air Force Research Laboratory | Researching secure virtualization and documenting system architecture for seL4, Microkit, and Kata Containers |
-| Computer Tech Intern | Sensible Bakery | Built Instagram automation and CRM tools that reduced manual work by 25% |
-| Operations Manager | Ideal Foods | Managed $600K in inventory and automated business workflows |
-| Store Manager | Bagel Point | Built store operations, staffing, inventory, and POS processes from the ground up |
+<p align="center">
+  <b>Backend Engineering</b> •
+  <b>Systems Research</b> •
+  <b>CRM Automation</b> •
+  <b>APIs & Webhooks</b> •
+  <b>Full-Stack Development</b>
+</p>
 
 ---
 
-## 🛠 Technical Skills
+## 🛠️ Languages, Tools & Technologies
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,php,python,java,cpp,cs,kotlin,swift,mysql,firebase,git,github,vscode,linux,androidstudio,figma,ps" alt="Technology stack" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/REST_APIs-02569B?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
+  <img src="https://img.shields.io/badge/Webhooks-111827?style=for-the-badge&logo=webhook&logoColor=white" alt="Webhooks" />
+  <img src="https://img.shields.io/badge/Google_Apps_Script-34A853?style=for-the-badge&logo=google&logoColor=white" alt="Google Apps Script" />
+  <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white" alt="Xcode" />
+</p>
 
 **Languages:** Python, Java, JavaScript, PHP, C++, C#, Kotlin, SQL  
 **Backend & Web:** REST APIs, Webhooks, HTML, CSS, Responsive Design, CRUD  
 **Databases:** MySQL, Firebase  
-**Systems & Platforms:** Linux, seL4, Microkit, Kata Containers, .NET MAUI  
+**Systems:** Linux, seL4, Microkit, Kata Containers  
 **Tools:** Git, GitHub, VS Code, Android Studio, Xcode, MySQL Workbench, Figma  
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,php,cpp,cs,kotlin,mysql,firebase,html,css,git,github,linux,vscode,androidstudio,figma" alt="Technical skills">
-</p>
 
 ---
 
 ## 🎓 Education
 
-**Baruch College, CUNY**  
-Bachelor of Science in Computer Science — Expected 2028
+### Baruch College, CUNY
+**Bachelor of Science in Computer Science** — Expected May 2028
 
-**LaGuardia Community College, CUNY**  
-Associate of Applied Science in Programming & Software Development — 2026
+### LaGuardia Community College, CUNY
+**Associate of Applied Science in Programming & Software Development** — June 2026
 
 ---
 
-## 🏅 Leadership & Recognition
+## 🏅 Leadership, Programs & Certifications
 
-- 1st Place Winner — LaGuardia Community College Hackathon, 2026
-- CUNY Tech Talent Pipeline Residency
-- Google × Basta Career Development Program, 2026
-- National Society of Leadership and Success, 2025
-- IBM Introduction to Software Engineering Certificate, 2026
-- Google Foundations: Data, Data, Everywhere Certificate, 2026
+- 🥇 Hackathon 1st Place Winner — LaGuardia Community College, 2026
+- 💻 CUNY Tech Talent Pipeline Residency
+- 🚀 Google × Basta Career Development Program, 2026
+- 🎓 National Society of Leadership and Success, 2025
+- 📜 Introduction to Software Engineering — IBM, Coursera, 2026
+- 📊 Foundations: Data, Data, Everywhere — Google, Coursera, 2026
 
 ---
 
 ## 📈 GitHub Activity
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=UserXX7&show_icons=true&theme=github_dark&hide_border=true" alt="GitHub stats">
-  <img height="165" src="https://streak-stats.demolab.com?user=UserXX7&theme=github-dark-blue&hide_border=true" alt="GitHub streak">
-</p>
+<table align="center">
+  <tr>
+    <td>
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=UserXX7&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats" />
+    </td>
+    <td>
+      <img src="https://streak-stats.demolab.com?user=UserXX7&theme=dark&hide_border=true" alt="GitHub streak" />
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📬 Let's Connect
-
-I am based in **Woodside, New York** and interested in opportunities involving backend engineering, automation, systems, and full-stack development.
+## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/alif-rony/">LinkedIn</a>
-  •
-  <a href="mailto:alifreza@live.com">Email</a>
-  •
-  <a href="https://userxx7.github.io/UserXX7/">Portfolio</a>
+  <a href="https://www.linkedin.com/in/alif-rony/">
+    <img height="40" src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:alifreza@live.com">
+    <img height="40" src="https://img.icons8.com/fluency/48/000000/mail.png" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://userxx7.github.io/UserXX7/">
+    <img height="40" src="https://img.icons8.com/fluency/48/domain.png" alt="Portfolio" />
+  </a>
+</p>
+
+<p align="center" style="color:#9ca3af; font-size:16px;">
+  📧 <a href="mailto:alifreza@live.com" style="color:#38bdf8;">alifreza@live.com</a>
+  <br>
+  📍 Woodside, New York
+  <br>
+  🌐 <a href="https://userxx7.github.io/UserXX7/" style="color:#38bdf8;">Portfolio Website</a>
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=3" alt="" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0ea5e9&height=2" alt="" />
 </p>
